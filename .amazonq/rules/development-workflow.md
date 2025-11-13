@@ -22,6 +22,7 @@ Based on Node.js documentation, focus on testing:
 ## Execution Environment
 
 - Ensure Node.js v25.2.0+ is available
+- TypeScript v5.9 (as specified in package.json)
 - Use pnpm for package management
 - Keep dependencies minimal (only dev dependencies for comparison tools)
 

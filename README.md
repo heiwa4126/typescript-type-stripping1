@@ -17,7 +17,9 @@ node src/hello.ts
 
 # enum テスト
 tsx src/ex1_enum.ts
+ts-node src/ex1_enum.ts
 bun src/ex1_enum.ts  # bunがあれば
+tsc && node dist/ex1_enum.js # トランスパイルして実行
 node --experimental-transform-types src/ex1_enum.ts
 
 ## 以下おなじノリで追加
