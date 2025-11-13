@@ -1,10 +1,12 @@
 # typescript-type-stripping1
 
+(2025-11)
+
 - [Node.jsでネイティブにTypeScriptを実行できる「Type Stripping」機能が安定版に到達。Node.js v25.2.0 - Publickey](https://www.publickey1.jp/blog/25/nodejstypescripttype_strippingnodejs_v2520.html)
 - [Node\.js v25\.2\.0 \(Current\)](https://nodejs.org/en/blog/release/v25.2.0#2025-11-11-version-2520-current-aduh95)
 
-ということなので、
-Type Stripping で動かないものを確認してみる。
+ということで、
+Type Stripping で動かないものを確認してみるためのワークスペース。
 
 ## 実行(暫定)
 
@@ -12,12 +14,12 @@ Type Stripping で動かないものを確認してみる。
 # 準備
 pnpm i
 
-# テスト実行
+# テスト実行 - Type stripping するだけで実行できる
 node src/hello.ts
 
 # enum テスト
-tsx src/ex1_enum.ts
 ts-node src/ex1_enum.ts
+tsx src/ex1_enum.ts
 bun src/ex1_enum.ts  # bunがあれば
 tsc && node dist/ex1_enum.js # トランスパイルして実行
 node --experimental-transform-types src/ex1_enum.ts
